@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.clear {clear: both;}
+
+header, footer{
+border: 1px solid #0d0;}
+
+nav{border: 1px solid #000;}
+
+nav>ul{border: 1px solid #fa0;
+list-style: none;}
+
+nav li{border: 1px solid #f00;
+float: left; /*각 메뉴들을 가로로 한줄에...*/
+margin-right: 10px;}
+
+nav#right>ul{float: right;}
+
+nav#center>ul{width: 300px;
+margin: 10px auto;}
+
+aside, article {float: left;}
+
+aside {border: 1px solid #d00;
+width:20%;
+height: 500px;}
+
+article {border: 1px solid #d00;
+width:57%;
+height: 500px;
+}
+
+section{border: 1px solid #530;
+height: 165px;
+}
+
+#sec01, #sec02 {float: left;
+width: 49%;
+}
+
+#sec04, #sec05 {float: left;
+width: 49%;
+}
+
+
+footer{height: 100px;}

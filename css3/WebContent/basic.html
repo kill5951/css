@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="basic.css" rel="stylesheet">
+
+<style type="text/css">
+
+h1{color: #830;}
+h2{color: #a60;}
+
+ol {line-height: 1.8;}
+
+li {padding: 0.8em;
+margin-bottom: 1em;}
+
+#li02 { background-color: #4d9;
+color: #052;
+}
+</style>
+</head>
+<body>
+<h1 class="bg-bk">CSS basic</h1>
+
+<pre style="font-size: 16px;background-color: #ccc;">
+선택자 {				--------------- 선택자는 CSS속성으로 꾸며줄 주인공
+	속성: 속성값;
+	속성: 속성값;
+	...
+}
+</pre>
+
+<h2 class="bg-bk">CSS 적용방식(CSS소스의 위치)</h2>
+<ol>
+	<li id="li01">External CSS - 외부파일형식
+	CSS소스를 독립된 파일"*.css"로 따로 저장하고
+	html문서의 head영역내에 <br>
+	&lt;link href="*.css" rel="stylesheet"&gt;<br>
+	형식으로 불러와서 연결시켜 적용한다.
+	사이트를 일관성, 통일성있게 구성할 수 있고 유지보수가 용이함
+	</li>
+	<li id="li02">Internal CSS - 내부에 포함된 방식
+	CSS소스를 head영역안에<br>
+	&lt;style type="text/css"&gt; ... &lt;/style&gt;<br>
+	형식으로 적용한다.<br>
+	해당 html문서에서만 스타일이 적용된다.
+	</li>
+	<li style="font-size: 16px; background-color: #ccc;">
+	Inline CSS - 태그 뒤에 포함된 방식<br>
+	&lt;tag style=" ... "&gt;<br>
+	형식으로 적용한다.<br>
+	유지보수가 어렵고 소스가 길어지나 <br>외부파일을 수정할 수 없는 환경에서
+	(임대쇼핑몰, 블로그 등) 적용할 수 있고<br>
+	세가지 방식 중에서 적용 우선순위가 가장 높다.
+	</li>
+</ol>
+
+<h2 class="bg-bk">CSS선택자 종류 중 대표3가지</h2>
+	<ol>
+		<li>Tag선택자 - Tag그대로를 선택자로 활용<br>
+		태그가 같으면 모두 같은 스타일이 적용됨(자동적용,강제적용)
+		</li>
+		<li>ID선택자 - #ID값 형식으로 선택자로 활용<br>
+		해당 페이지 내에서 ID값을 중복해서 쓸 수 없으므로 주로 구조적인
+		목적의 스타일에 사용함
+		</li>
+		<li>Class선택자- .class값 형식으로 선택자로 활용<br>
+		ID와 달리 class값은 중복해서 쓸수 있으므로 주로 디자인적인
+		목적의 스타일에 사용함.
+		태그 하나에 class값은 2개 이상 동시적용도 가능
+		</li>
+	</ol>
+	
+<h2 class="bg-bk">전체 선택자 =*</h2>
+<pre class="bg-bk wh">
+* {속성: 속성값; }
+
+문서의 모든 선택자(요소)를 다 불러와서 스타일을 적용함.
+ CSS초기화에 활용.
+ 관계선택자 등과 조합하여 적용가능.
+</pre>
+</body>
+</html>

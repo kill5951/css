@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/* 
+font-family: 'Jua', sans-serif;
+font-family: 'Red Rose', cursive;
+ */
+
+body{border: 1px solid;
+color: #006;
+margin: 0;
+font-family: 'Nanum Gothic', sans-serif;}
+
+h2{font-family: 'Jua', sans-serif;
+	font-weight: normal;
+}
+
+.red-rose{
+font-family: 'Red Rose', cursive;
+}
+
+#ol-01{
+	background-color: #006;
+	color: #fff;
+}
+
+li {border: 1px soLid;
+font-size: 14px;
+line height: 1.8;
+color: #0af;
+}
+
+/*	font-size	*/
+
+#f-size, #f-weight, #f-style{
+/* 선택자 2개 이상 불러와서 한번에 적용하기
+선택자A, 선택자B = 그룹선택자  */
+border: 3px dashed;
+margin:5em 2em;
+padding: 1em;
+color: #333;
+font-size: 20px;}
+
+
+.fs01{ font-size: 16px; }
+.fs02{ font-size: 20px;}
+
+.fs03-1{ font-size: 0.7em;}
+.fs03-2{ font-size: 1em;}
+.fs03-3{ font-size: 1.5em;}
+
+.fs04-1{ font-size: 0.7rem;}
+.fs04-2{ font-size: 1rem;}
+.fs04-3{ font-size: 1.5rem;}
+
+.fs05{font-size: 100%;}
+.fs06{font-size: 150%;}
+
+/*font-weight*/
+
+.btm-brd{border-bottom: 3px dashed;}
+
+.fw01{font-weight: normal;}
+.fw01>b{/*관계 선택자-부모자식선택자
+		선택자A>선택자B
+		선택자A의 한단계 아래에 
+		선택자 B가 있는 경우를 지정*/
+	font-weight: normal;}
+
+.fw02{font-weight: bold;}
+.fw02:hover{
+	/* 상태선택자-마우스오버시*/
+	font-weight: normal;
+	background-color: #5cf;
+}
+.fw03-1{font-weight: 100;}
+.fw03-2{font-weight: 200;}
+.fw03-3{font-weight: 300;}
+.fw03-4{font-weight: 400;}
+.fw03-5{font-weight: 500;}
+.fw03-6{font-weight: 600;}
+.fw03-7{font-weight: 700;}
+.fw03-8{font-weight: 800;}
+.fw03-9{font-weight: 900;}
+
+/*font-style */
+.fst01{font-style: normal;}
+.fst02{font-style: italic;}
+.fst03{font-style: oblique;}
+
+#f-style>.fst03>i:hover {
+/* #f-style i:hover 
+>:괄호를넣으면 자식
+ :공백만 넣으면 자손 */
+font-style: normal;
+}
+
+/* font-family */
+
+.ffm01{font-family: "맑은 고딕", "고딕", "돋움", sans-serif;}
+.ffm02{font-family: "나눔 명조", "궁서", serif;}
+
+.ffm03{font-family: "georgia", "Times New roman", "Times",serif;}
+.ffm04{font-family: "Arial", "Verdana", sans-serif;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

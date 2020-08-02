@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin</title>
+<link href="margin.css" rel="stylesheet">
+<link href="margin2.css" rel="stylesheet">
+</head>
+<body>
+<h1>margin - 테두리 기준 바깥 여백</h1>
+
+<h2>margin방향별 지정 속성</h2>
+<ol id="mdir">
+	<li class="mt">margin-top: ;</li>
+	<li class="mr">margin-right: ;</li>
+	<li class="mb">margin-bottom: ;</li>
+	<li class="ml">margin-left: ;</li>
+</ol>
+
+<div class="ml mt">div</div>
+
+<h2>margin 속성값의 갯수별 지정</h2>
+
+<ol>
+	<li>margin: n ; 양사방으로 통일</li>
+	<li>margin: n n ; 상하와 좌우 서로 같은 값으로</li>
+	<li>margin: n n n ; 상, 좌우 서로 같은 값, 하 순서로 적용</li>
+	<li>margin: n n n n ; 상 우 하 좌의 순서로 각각 적용</li>
+</ol>
+
+<section id="sec01">
+<h2>margin: n ; 양사방 n으로 통일</h2>
+
+<div>div01</div>
+<div class="m1">div02 margin: 70px</div>
+<div>div03</div>
+</section>
+
+
+<section id="sec02">
+<h2>margin: n n ; </h2>
+
+<div>div01</div>
+<div class="m2">div02 margin: 50px 0;</div>
+<div>div03</div>
+
+
+<p class="center">block요소의 중앙 정렬<br>
+ 왼쪽 margin의 값과 오른쪽의 margin값이 서로 같으면 요소는 항상 중앙에 온다.<br>
+ 따라서 <b>margin의 좌우 값을 auto</b>로 지정.
+</p>
+
+</section>
+
+
+<section id="sec03">
+<h2>margin: n n n ; </h2>
+
+<div>div01</div>
+<div class="m3">div02</div>
+<div>div03</div>
+</section>
+
+<section id="sec04">
+<h2>margin: n n n n ; </h2>
+
+<div>div01</div>
+<div class="m4">div02</div>
+<div>div03</div>
+</section>
+
+
+<section id="sec05">
+<h2>inline 요소에서의 margin 적용</h2>
+
+<p>한 줄에 나란히 오는 요소 즉, inline요소들은
+상하 margin 적용이 안 됨</p>
+
+<a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a>
+<a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a>
+
+
+
+
+</section>
+
+
+
+
+
+</body>
+</html>

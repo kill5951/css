@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float2</title>
+<link href="float2.css" rel="stylesheet">
+</head>
+<body>
+<header>
+	<h1>logo</h1>
+	<nav id="left">
+		<ul>
+			<li><a href="#">menu01</a></li>
+			<li><a href="#">menu02</a></li>
+			<li><a href="#">menu03</a></li>
+			<li><a href="#">menu04</a></li>
+		</ul>
+	</nav>
+	
+	<div class="clear"></div>
+	
+	<nav id="right">
+		<ul>
+			<li><a href="#">menu01</a></li>
+			<li><a href="#">menu02</a></li>
+			<li><a href="#">menu03</a></li>
+			<li><a href="#">menu04</a></li>
+		</ul>
+	</nav>
+	
+	<div class="clear"></div>
+	
+	<nav id="center">
+		<ul>
+			<li><a href="#">menu01</a></li>
+			<li><a href="#">menu02</a></li>
+			<li><a href="#">menu03</a></li>
+			<li><a href="#">menu04</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div class="clear"></div>
+
+<aside>
+	aside-left
+요소에 float을 적용하면
+1.float: left; 는 각자 한줄에 나란히 정렬되나
+float: right; 는 우측이 우선이라 요소들의 순서가 바뀜
+
+2.float을 주면 그다음에 오는 요소는 float의 영향을 받아서 
+위로 밀고올라옴. 따라서 float의 해제 속성
+clear: both; 을 지정해서 제자리로 보낸다.
+
+3.자식들이 모두 float을 주면 부모요소는 높이값을 잃어버림
+(형태 유지가 안됨)
+부모요소에 height 값을 지접 주거나
+overflow: hidden;을 지정하면 된다.
+
+</aside>
+<article>
+	<section id="sec01">
+		section-01
+	</section>
+	<section id="sec02">
+		section-02
+	</section>
+	<section id="sec03" class="clear">
+		section-03
+	</section>
+	<section id="sec04">
+		section-04
+	</section>
+	<section id="sec05">
+		section-05
+	</section>
+
+</article>
+<aside>
+	aside-right
+
+
+
+
+
+</aside>
+<footer class="clear">
+	copyright
+
+
+
+
+
+</footer>
+
+
+
+</body>
+</html>

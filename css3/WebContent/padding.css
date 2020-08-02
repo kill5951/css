@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+#pdr>li{border: 1px solid;
+width: 150px;}
+
+/* padding 방향별 지정 속성*/
+.pt{padding-top: 50px;}
+.pt{padding-right: 50px;}
+.pt{padding-bottom: 50px;}
+.pt{padding-left: 50px;}
+
+/* padding 속성값의 갯수별 지정*/
+.pn1{padding: 1.2em;}
+.pn2{padding: 0.7em 1.5em;}
+.pn3{padding: 0.7em 1.5em 1.2em;}
+.pn4{padding: 1.2em 0.3em 1.2em; 0.6em}
+
+
+.ph01{border: 1px solid #666;
+padding: 20px 20px 120px;
+opacity: 0.4;
+}
+
+.ph01:hover{
+opacity: 1;
+box-shadow: 6px 5px 4px #333;
+transition: 1.5s;
+}

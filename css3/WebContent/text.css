@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+h1, h2{
+font-family: "Verdana" , sans-serif;
+color:#052;
+}
+
+section{border: 4px solid #ccc;
+margin: 5em 0;
+padding: 1em;}
+
+section>h2 {
+	border-left: 10px solid;
+	padding: 10px;
+	background-color: #7fc;
+}
+
+#sec01>p {border: 1px solid;}
+
+.left{text-align: left; }
+.center{text-align: center;}
+.right{text-align: right;}
+.justy{text-align: justy;}
+
+/* text-decoration */
+
+.deco01{text-decoration: overline;}
+.deco02{text-decoration: line-through;}
+.deco03{text-decoration: underline;}
+.deco04>a{text-decoration: none;}
+
+.deco04>a:link{color: #0d0;
+/* 초기링크 상태 지정 */}
+.deco04>a:visited {color: #050;}
+/* 방문한링크 상태 지정 */}
+.deco04>a:hover{color:#fa0;}
+/* 마우스오버시의 상태 지정 */}
+.deco04>a:active {color: #005;}
+/* 활성화된 링크 상태 지정 */}
+
+/* text-indent */
+.ind-1{text-indent: 30px;}
+.ind-2{text-indent: 10%;}
+.ind-3{text-indent: 1.5em;}
+.ind-4{text-indent: -50px;}
+
+#sec03:hover>p{
+	border: 1px solid #555;
+}
+
+/* text-transform */
+.tr01{text-transform: none;}
+.tr02{text-transform: lowercase;}
+.tr03{text-transform: uppercase;}
+.tr04{text-transform: capitalize;}
+
+
+
+
+
+
+
+

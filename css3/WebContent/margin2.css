@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+h1{color: #444;
+background-color: #ccc;
+border-left: 12px solid;
+padding-left: 14px;
+width: 800px;
+margin: 4em auto 2em;}
+
+h2{color: #ccc;
+background-color: #444;
+border-left: 12px solid;
+padding-left: 14px;
+}
+
+section{border: 4px dashed #ccc;
+margin: 3em 1em;
+padding: 1em;}
+
+section>h2{
+	border-top: 1px solid #eee;
+	border-bottom: 2px dashed #ccc;
+	background-color: #bbb;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding: 6px 0 6px 20px;
+	color: #555;
+}
